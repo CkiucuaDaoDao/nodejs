@@ -4,8 +4,10 @@ const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const app = express();
 const port = 3000;
-
+const db = require('./config/db');
 const route = require('./routes');
+
+db.connect();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -21,5 +23,5 @@ app.set('views', path.join(__dirname, 'resourses/views'));
 route(app);
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
+    console.log(`App listening on port ${port}`);
 });
