@@ -1,17 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <div class="container">
+
+  <a class="navbar-brand" href="/">F8 Education</a>
+  <a class="navbar-brand" href="/search"><i class="fa-solid fa-magnifying-glass"></i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav ml-auto">
+            
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="https://scontent.fdad7-1.fna.fbcdn.net/v/t39.30808-6/305853400_3251198301788056_3844833345337622610_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=174925&_nc_ohc=VToqTvH2P2gAX-q7Wot&_nc_ht=scontent.fdad7-1.fna&oh=00_AfBjHicmv9ZV5eIQFGIN-uDXc0QqmrxC0COly9PXaTt9Zg&oe=64B09B06" alt="" class="avatar-user">
+          Quang Vinh
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/courses/create">Đăng khóa học</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/me/stored/courses">Khóa học của tôi</a>
+          <a class="dropdown-item" href="/me/blog">Bài viết của tôi</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Đăng xuất</a>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
+
+
     </ul>
+  </div>
   </div>
 </nav>
